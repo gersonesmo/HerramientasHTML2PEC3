@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bfcc90a95e.js" crossorigin="anonymous"></script>
+    <title>UOC Boilerplate</title>
+  </head>
+  <body class="bg-body-blue">
+    <header class="flex flex-row flex-wrap justify-between mb-8">
+      <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" 
+      class="w-full sm:w-1/4 md:w-2/6 lg:w-1/6 bg-custom-orange">
+      <ul class="flex flex-wrap flex-row justify-between w-3/5 sm:w-1/4 md:w-2/6 lg:w-4/6 mr-20">
+        <a href="members.html" class="link">Members</a>
+        <a href="index.html" class="link">Blog</a>
+        <a href="index.html" class="link">Our music</a>
+      </ul>
+    </header>
+
+    <div class="flex flex-wrap">
+      <div class="flex flex-wrap justify-center w-full sm:w-1/2 md:w-1/3 p-2">
+        <img class="w-4/6" src="assets/images/member-1.jpg" alt="Member One">
+        <div class="member-desc">
+          <h3 class="member-name">César</h3>
+          <h5 class="member-role">Cantante</h5>
+          <p class="text-custom-green">
+            Far far away, behind the word mountains, far
+            from the countries Vokalia and Consonantia
+          </p></div>
+      </div>
+      <div class="flex flex-wrap justify-center w-full sm:w-1/2 md:w-1/3 p-2">
+        <img class="w-4/6" src="assets/images/member-2.jpg" alt="Member Two">
+        <div class="member-desc">
+          <h3 class="member-name">Lorena</h3>
+          <h5 class="member-role">Teclista</h5>
+          <p class="text-custom-green">
+            Separated they live in Bookmarksgrove
+            right at the coast of the Semantics
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center w-full sm:w-1/2 md:w-1/3 p-2">
+        <img class="w-4/6" src="assets/images/member-3.jpg" alt="Member Three">
+        <div class="member-desc">
+          <h3 class="member-name">Carla</h3>
+          <h5 class="member-role">Bajista</h5>
+          <p class="text-custom-green">
+            A small river named Duden flows by their
+            place and supplies it 
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center w-full sm:w-1/2 md:w-1/3 p-2">
+        <img class="w-4/6" src="assets/images/member-4.jpg" alt="Member Four">
+        <div class="member-desc">
+          <h3 class="member-name">Charlie</h3>
+          <h5 class="member-role">Guitarrista</h5>
+          <p class="text-custom-green">
+            It is a paradisematic country, in which roasted
+            parts of sentences fly into your mouth
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center w-full sm:w-1/2 md:w-1/3 p-2">
+        <img class="w-4/6" src="assets/images/member-5.jpg" alt="Member Five">
+        <div class="member-desc">
+          <h3 class="member-name">Leo</h3>
+          <h5 class="member-role">Vientos</h5>
+          <p class="text-custom-green">
+            Even the all-powerful Pointing has no
+            control about the blind texts
+          </p></div>
+      </div>
+      <div class="flex flex-wrap justify-center w-full sm:w-1/2 md:w-1/3 p-2">
+        <img class="w-4/6" src="assets/images/member-6.jpg" alt="Member One">
+        <div class="member-desc">
+          <h3 class="member-name">Lucas</h3>
+          <h5 class="member-role">Batería</h5>
+          <p class="text-custom-green">
+            One day however a small line of blind text
+            by the name of Lorem Ipsum
+          </p></div>
+      </div>
+    </div>
+    <footer class="flex flex-row flex-wrap justify-between mt-8">
+      <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" 
+      class="w-full sm:w-1/4 md:w-2/6 lg:w-1/6 bg-custom-orange">
+      <ul class="flex flex-wrap flex-row justify-between w-3/5 sm:w-1/4 md:w-2/6 lg:w-4/6 mr-20">
+        <a href="index.html" class="link">Homepage</a>
+        <a href="members.html" class="link">Members</a>
+        <a href="index.html" class="link">Blog</a>
+        <a href="index.html" class="link">Our music</a>
+      </ul>
+      <p>
+        <i class="fas fa-phone text-custom-green font-semibold"> 612 345 678</i><br>
+        <i class="fas fa-envelope text-custom-green font-semibold"> Email us</i><br>
+        <i class="fab fa-google-plus-g text-custom-green font-semibold"></i>
+        <i class="fab fa-facebook-f text-custom-green font-semibold"></i>
+        <i class="fab fa-twitter text-custom-green font-semibold"></i>
+      </p>
+    </footer>
+    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
+
+<style>
+  .member-name {
+    @apply text-custom-green font-bold text-xl;
+  }
+
+  .member-role {
+    @apply text-custom-orange font-semibold;
+  }
+
+  .link {
+    @apply w-full text-right text-custom-orange font-bold text-xl;
+  }
+
+  @screen md {
+    .link {
+      @apply w-1/5;
+    }
+  }
+
+  .member-desc {
+    @apply w-4/6 text-center p-2;
+  }
+</style>

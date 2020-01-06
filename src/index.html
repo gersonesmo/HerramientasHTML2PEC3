@@ -5,18 +5,80 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bfcc90a95e.js" crossorigin="anonymous"></script>
     <title>UOC Boilerplate</title>
   </head>
-  <body>
-    <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
+  <body class="bg-body-blue">
+    <header class="flex flex-row flex-wrap justify-between mb-8">
+      <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" 
+      class="w-full sm:w-1/4 md:w-2/6 lg:w-1/6 bg-custom-orange">
+      <ul class="flex flex-wrap flex-row justify-between w-3/5 sm:w-1/4 md:w-2/6 lg:w-4/6 mr-20">
+        <a href="members.html" class="link">Members</a>
+        <a href="index.html" class="link">Blog</a>
+        <a href="index.html" class="link">Our music</a>
+      </ul>
+    </header>
 
+    <div class="flex flex-col">
+      <img src="assets/images/band.jpg" alt="Band photo" class="w-full md:w-1/2 lg:w-1/3 self-center">
+      <h1 class="text-custom-green text-3xl font-bold self-center mt-4">Jupiter</h1>
+      <h4 class="text-custom-green text-xl font-semibold self-center subtitle">
+        <span class="subtitle-span">
+          The sound of a planet
+        </span>
+      </h4>
+      <p class="text-custom-green text-center">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit <br>
+        arcu natoque rutrum, pellentesque fermentum <br>
+        id sodales fusce viverra auctor aenean <br>
+        imperdiet class, habitant euismod <br>
+        aliquam sociis bibendum leo <br>
+        ultrices dictum mus.
+    </p>
+    </div>
+
+    <footer class="flex flex-row flex-wrap justify-between mt-8 relative bottom-0">
+      <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" 
+      class="w-full sm:w-1/4 md:w-2/6 lg:w-1/6 bg-custom-orange">
+      <ul class="flex flex-wrap flex-row justify-between w-3/5 sm:w-1/4 md:w-2/6 lg:w-4/6 mr-20">
+        <a href="index.html" class="link">Homepage</a>
+        <a href="members.html" class="link">Members</a>
+        <a href="index.html" class="link">Blog</a>
+        <a href="index.html" class="link">Our music</a>
+      </ul>
+      <p>
+        <i class="fas fa-phone text-custom-green font-semibold"> 612 345 678</i><br>
+        <i class="fas fa-envelope text-custom-green font-semibold"> Email us</i><br>
+        <i class="fab fa-google-plus-g text-custom-green font-semibold"></i>
+        <i class="fab fa-facebook-f text-custom-green font-semibold"></i>
+        <i class="fab fa-twitter text-custom-green font-semibold"></i>
+      </p>
+    </footer>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
+
+<style>
+  .subtitle {
+    border-bottom: 2px solid #beff70;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    width: 28vw;
+    text-align: center;
+  }
+  .subtitle-span {
+    background-color: #1c3485;
+    padding: 0 20px;
+    text-align: center;
+  }  
+  .link {
+    @apply w-full text-right text-custom-orange font-bold text-xl;
+  }
+
+  @screen md {
+    .link {
+      @apply w-1/5;
+    }
+  }
+</style>
